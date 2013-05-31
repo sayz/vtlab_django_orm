@@ -8,8 +8,13 @@
 <title>Öğrenci Ekle</title>
 </head>
 <body>
-	<center><h1>Öğrenci Bilgileri</h1></center>
-
+	<center>
+		<h1>Öğrenci Bilgileri</h1>
+		<b>İsmi: </b>{{ ogrenci.name}}<br>
+		<b>Soyismi: </b>{{ ogrenci.surname}}<br>
+		<b>Bölümü: </b>{{ogrenci.bolum.name}}<br>
+		<b>Fakültesi: </b>{{ogrenci.bolum.fakulte.name}}<br>
+	</center>
 </body>
 </html>
 

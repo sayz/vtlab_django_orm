@@ -20,3 +20,5 @@ uygulamanızın olduğu dizine geçin
 komutlarını verin. 
 
 daha sonra tarayıcınızdan [localhost:8080](http://localhost:8000/) adresine girerek uygulamaya erişebilirsiniz.
+
+uygulamayı canlı olarak denemek için [pythonanywhere](http://sayz.pythonanywhere.com/)'de kurulu haline bakabilirisiniz.

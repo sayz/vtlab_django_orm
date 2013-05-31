@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Anasayfa</title>
+<link rel="stylesheet" type="text/css" href='{% get_static_prefix %}css/index.css' media="screen" />
+</head>
+<body>
+<center>  
+<h1>ORM ile Veritabanı işlemleri</h1>
+  <br />
+<a href="{% url fakulte %}" class="but--action">+ Fakülte Ekle</a>
+ <br />
+<a href="{% url bolum %}" class="but--action">+ Bölüm Ekle</a>
+  <br />
+<a href="{% url ogrenci %}" class="but--action">+ Öğrenci Ekle</a> 
+  <br />
+<a href="{% url sorgu %}" class="but--action">? Öğrenci Sorgula</a> 
+</center>
+
+</body>
+</html>

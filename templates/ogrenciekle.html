@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}css/forms.css"
+	media="screen" />
+<title>Öğrenci Ekle</title>
+</head>
+<body>
+	<center><h1>Öğrenci Ekleme Formu</h1></center>
+	<form action="{% url ekle %}" method="post">
+		{% csrf_token %}
+		<input name="ad" placeholder="Öğrenci Adı" class="name" required />
+		<input name="soyad" placeholder="Öğrenci Soyadı" class="name" required />
+		<input name="bid" placeholder="Öğrenci Bölüm ID" class="name" required /> 
+		<input type="hidden" name="value" value="ogrenci" />
+		<input name="submit" class="btn" type="submit" value="Ekle" />
+	</form>
+</body>
+</html>

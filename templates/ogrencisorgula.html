@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="{% get_static_prefix %}css/forms.css"
+	media="screen" />
+<title>Öğrenci Sorgula</title>
+</head>
+<body>
+	<center><h1>Öğrenci Sorgulama</h1></center>
+	<form action="{% url sorgula %}" method="post">
+		{% csrf_token %}
+		<input name="soid" placeholder="Öğrenci ID" class="name" required />
+		<input name="submit" class="btn" type="submit" value="Sorgula" />
+	</form>
+</body>
+</html>
